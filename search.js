@@ -40,3 +40,4 @@ export function search(initialState, goalTest, actions, successor, print = true)
     }
     return null
 }
+
