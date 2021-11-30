@@ -1,4 +1,4 @@
-export const canvas = document. querySelector('#canvas')
+export const canvas = document.querySelector('#canvas')
 const ctx = canvas.getContext('2d')
 const d = 3
 const tileWidth = canvas.width / d
@@ -15,7 +15,7 @@ class Tile
         this.col = j
         this.val = n
     }
-    
+
     draw()
     {
         if(this.val)
@@ -24,7 +24,7 @@ class Tile
             ctx.strokeStyle = canvasColor
             ctx.linewidth = 5
             ctx.fillRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
-            ctx.strokeRect(this.col *  tileWidth, this.row * tileHeight, tileWidth, tileHeight)
+            ctx.strokeRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
             ctx.font = `${tileWidth * 0.6}px Arial`
             ctx.fillStyle = "blue"
             ctx.textAlign = 'center'
